@@ -1,0 +1,30 @@
+{
+  "name": "cinema-application",
+  "version": "1.0.0",
+  "description": "\"Knowing everything about the newly released movies is only a click away\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayaeraky/Cinema-Application.git"
+  },
+  "author": "Maya Eleraky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayaeraky/Cinema-Application/issues"
+  },
+  "homepage": "https://github.com/mayaeraky/Cinema-Application#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jest": "^28.1.3",
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.19"
+  }
+}
