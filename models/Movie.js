@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const { db } = require('./User');
 const ObjectID = mongoose.Schema.Types.ObjectId;
-const CounterModel = require('./CounterModel.js');
+//const CounterModel = require('./CounterModel.js');
 const user = require('./User');
 
 
@@ -8,9 +9,9 @@ const Movie = mongoose.Schema({
 
     name: {type: String, required: true, unique: true}, 
     id: {type: Number, required: true},
-    showtimes: [{type: Date}],
+    showtime: {type: Date},
     duration_in_minutes: {type: Number, required: true},
-    pictures:[{type: Image, required: true}],
+    pictureID: {type: ObjectID, ref: 'photos.files', required: true},
     desciption: {type: String},
     addedby: {type: ObjectID, ref: 'user', required: true}
 },
